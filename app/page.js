@@ -136,7 +136,7 @@ export default function DemoIAAula() {
       level,
       feedback,
       suggestion:
-        "Explica inteligência artificial para alunos do 12.º ano, em português de Portugal, em 4 pontos, com 2 exemplos do dia-a-dia e um cuidado ético.",
+        "Explica inteligência artificial para executivos da direção de compras e estratégia, com o objetivo de aumentarem a produtividade das vendas, em português de Portugal, em 4 pontos, com 2 exemplos do dia-a-dia e um cuidado ético.",
     };
   };
 
@@ -304,7 +304,7 @@ export default function DemoIAAula() {
               <textarea
                 value={studentPrompt}
                 onChange={(e) => setStudentPrompt(e.target.value)}
-                placeholder="Ex.: Explica inteligência artificial para alunos do 12.º ano, em 4 pontos e com exemplos."
+                placeholder="Ex.: Explica inteligência artificial para executivos da direção de compras e estratégia, em 4 pontos e com exemplos."
                 className="mt-3 min-h-[220px] w-full rounded-2xl border border-slate-300 p-4 text-sm text-slate-800 outline-none focus:border-slate-500"
               />
             </div>
