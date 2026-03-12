@@ -1,70 +1,95 @@
 # demo-ia-aula-next-v2
 
-Aplicação interativa v2 para aula sobre **IA, prompts, chatbot e assistente virtual**, pronta para partilhar com alunos por link público.
+Aplicação interativa para aula de **IA, prompts, chatbot e assistentes virtuais** (foco em direção comercial / executive education), pensada para uso simples em sala.
 
 ## O que os alunos precisam?
 
-**Apenas do link final da aplicação.**
+**Só do link final da aplicação**.
 
-- ✅ Alunos **não** precisam de conta Vercel
-- ✅ Alunos **não** precisam de conta GitHub
-- ✅ Alunos **não** precisam de login na app
-- ✅ Alunos só abrem o URL e testam
+- ✅ Sem conta Vercel
+- ✅ Sem conta GitHub
+- ✅ Sem login na app
+- ✅ Abrir e testar no browser
 
-> Quem precisa de conta na Vercel/GitHub é apenas quem publica (normalmente o professor).
+> Apenas o professor (ou quem publica) precisa de conta na plataforma de deploy.
 
-## Funcionalidades
+## Como executar localmente (passo a passo)
 
-- Comparador de prompts (fraco, médio e forte)
-- Simulador de chatbot vs assistente virtual
-- Laboratório de prompts com pontuação e feedback instantâneo
-- Roteiro rápido para condução da aula
+> Corre estes comandos no **Terminal**, dentro da pasta do projeto.
 
-## Executar localmente (onde correr os comandos?)
-
-Corre os comandos **no Terminal**, dentro da pasta do projeto (`demo-ia-aula-next`).
-
-### 1) Abrir a pasta do projeto
+### 1) Abrir o terminal na pasta correta
 
 ```bash
 cd /caminho/para/demo-ia-aula-next
 ```
 
-> Exemplo: `cd ~/Desktop/demo-ia-aula-next`
+Exemplo:
 
-### 2) Instalar dependências e iniciar
+```bash
+cd ~/Desktop/demo-ia-aula-next
+```
+
+### 2) Instalar dependências
 
 ```bash
 npm install
+```
+
+### 3) Iniciar a aplicação
+
+```bash
 npm run dev
 ```
 
-### 3) Abrir no browser
+### 4) Abrir no browser
 
-`http://localhost:3000`
+```text
+http://localhost:3000
+```
 
-Se não abrir na porta 3000:
+## Se `localhost:3000` não abrir
+
+1. Mantém o terminal com `npm run dev` aberto.
+2. Tenta `http://127.0.0.1:3000`.
+3. Se a porta estiver ocupada, usa:
 
 ```bash
 npm run dev -- -p 3001
 ```
 
-E abre: `http://localhost:3001`
+Depois abre:
 
-## Build
+```text
+http://localhost:3001
+```
+
+## Verificação rápida (diagnóstico)
+
+```bash
+pwd
+node -v
+npm -v
+npm run dev -- -p 3001
+```
+
+Se o terminal mostrar `Ready`/`Local: http://localhost:3001`, a app está a correr corretamente.
+
+## Build de produção
 
 ```bash
 npm run build
 ```
 
-## Publicar para os alunos (fluxo simples)
+## Publicar e partilhar com alunos
 
-1. Criar um novo repositório público no GitHub (ex.: `demo-ia-aula-next-v2`)
+Fluxo mais simples:
+
+1. Criar repositório público no GitHub (ex.: `demo-ia-aula-next-v2`)
 2. Fazer push do projeto
-3. Fazer deploy na Vercel
-4. Partilhar o link da Vercel com os alunos
+3. Fazer deploy (Vercel ou outra plataforma)
+4. Partilhar o link público com os alunos
 
-### Comandos Git (repositório novo)
+### Comandos Git (repo novo)
 
 ```bash
 git init
@@ -75,12 +100,9 @@ git remote add origin https://github.com/SEU-USUARIO/demo-ia-aula-next-v2.git
 git push -u origin main
 ```
 
-## Alternativa sem Vercel para teste em sala
+## Funcionalidades da demo
 
-Se não quiseres publicar já, podes abrir localmente no teu computador e mostrar em aula pelo teu ecrã:
-
-```bash
-npm run dev
-```
-
-Depois abre `http://localhost:3000` no browser.
+- Comparador de prompts (fraco, médio e forte)
+- Simulador chatbot vs assistente virtual
+- Laboratório de prompts com pontuação e feedback
+- Roteiro rápido para condução da aula
