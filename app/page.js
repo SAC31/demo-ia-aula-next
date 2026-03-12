@@ -88,7 +88,7 @@ export default function DemoIAAulaSimples() {
       <div className="mx-auto max-w-6xl space-y-8">
         <header className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
-            Versão simples para partilha com alunos
+            demo-ia-aula-next-v2
           </p>
           <h1 className="mt-2 text-3xl font-bold text-slate-900 md:text-5xl">
             Demo de IA para aula — sem registo e sem login
@@ -96,6 +96,9 @@ export default function DemoIAAulaSimples() {
           <p className="mt-3 max-w-3xl text-slate-600">
             Esta página é autoexplicativa e pronta para partilhar por link público. O aluno só abre,
             testa e aprende.
+          </p>
+          <p className="mt-2 text-sm text-slate-500">
+            V2 focada em direção comercial e executive education.
           </p>
           <div className="mt-4 rounded-2xl bg-emerald-50 p-4 text-sm text-emerald-900">
             <strong>Importante:</strong> não precisa criar conta nem ter acesso ao repositório.

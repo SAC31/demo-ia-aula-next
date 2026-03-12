@@ -1,6 +1,6 @@
-# Demo IA para Aula (simples, sem login)
+# demo-ia-aula-next-v2
 
-Aplicação interativa para aula sobre **IA, prompts, chatbot e assistente virtual**, pronta para partilhar com alunos por link público.
+Aplicação interativa v2 para aula sobre **IA, prompts, chatbot e assistente virtual**, pronta para partilhar com alunos por link público.
 
 ## Objetivo desta versão
 
@@ -33,15 +33,15 @@ npm run build
 
 ## Publicar em novo repositório GitHub (sem dar acesso aos alunos)
 
-1. Criar um novo repositório público no GitHub (ex.: `demo-ia-aula-simples`)
+1. Criar um novo repositório público no GitHub (ex.: `demo-ia-aula-next-v2`)
 2. No projeto local:
 
 ```bash
 git init
 git add .
-git commit -m "Versão simples para aula sem login"
+git commit -m "Release v2: demo de IA para aula sem login"
 git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/demo-ia-aula-simples.git
+git remote add origin https://github.com/SEU-USUARIO/demo-ia-aula-next-v2.git
 git push -u origin main
 ```
 
