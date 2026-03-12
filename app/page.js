@@ -101,9 +101,19 @@ export default function DemoIAAulaSimples() {
             V2 focada em direção comercial e executive education.
           </p>
           <div className="mt-4 rounded-2xl bg-emerald-50 p-4 text-sm text-emerald-900">
-            <strong>Importante:</strong> não precisa criar conta nem ter acesso ao repositório.
+            <strong>Importante:</strong> os alunos não precisam de conta Vercel, GitHub ou login; apenas abrir o link público.
           </div>
         </header>
+
+
+        <section className="rounded-3xl border border-blue-200 bg-blue-50 p-6 shadow-sm">
+          <h2 className="text-xl font-semibold text-blue-900">Partilha sem contas para alunos</h2>
+          <ul className="mt-3 space-y-2 text-sm text-blue-900">
+            <li>• Só o professor/publicador precisa de conta para fazer o deploy.</li>
+            <li>• Os alunos recebem o URL final e usam no browser sem autenticação.</li>
+            <li>• Não é necessário acesso ao código nem ao repositório.</li>
+          </ul>
+        </section>
 
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-semibold text-slate-900">Roteiro rápido de aula (30 minutos)</h2>

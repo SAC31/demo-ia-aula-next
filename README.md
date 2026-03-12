@@ -2,12 +2,16 @@
 
 Aplicação interativa v2 para aula sobre **IA, prompts, chatbot e assistente virtual**, pronta para partilhar com alunos por link público.
 
-## Objetivo desta versão
+## O que os alunos precisam?
 
-- Sem registo
-- Sem login
-- Sem acesso ao repositório para os alunos
-- Apenas abrir o link e testar
+**Apenas do link final da aplicação.**
+
+- ✅ Alunos **não** precisam de conta Vercel
+- ✅ Alunos **não** precisam de conta GitHub
+- ✅ Alunos **não** precisam de login na app
+- ✅ Alunos só abrem o URL e testam
+
+> Quem precisa de conta na Vercel/GitHub é apenas quem publica (normalmente o professor).
 
 ## Funcionalidades
 
@@ -31,10 +35,14 @@ Abrir: `http://localhost:3000`
 npm run build
 ```
 
-## Publicar em novo repositório GitHub (sem dar acesso aos alunos)
+## Publicar para os alunos (fluxo simples)
 
 1. Criar um novo repositório público no GitHub (ex.: `demo-ia-aula-next-v2`)
-2. No projeto local:
+2. Fazer push do projeto
+3. Fazer deploy na Vercel
+4. Partilhar o link da Vercel com os alunos
+
+### Comandos Git (repositório novo)
 
 ```bash
 git init
@@ -45,7 +53,12 @@ git remote add origin https://github.com/SEU-USUARIO/demo-ia-aula-next-v2.git
 git push -u origin main
 ```
 
-3. Fazer deploy na Vercel (importando o repositório)
-4. Partilhar o link gerado pela Vercel com os alunos
+## Alternativa sem Vercel para teste em sala
 
-Assim os alunos testam sem conta e sem acesso ao código.
+Se não quiseres publicar já, podes abrir localmente no teu computador e mostrar em aula pelo teu ecrã:
+
+```bash
+npm run dev
+```
+
+Depois abre `http://localhost:3000` no browser.
